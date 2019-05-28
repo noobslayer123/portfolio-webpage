@@ -9,9 +9,9 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1b242f;
-  border-bottom: 3px solid #4ac6d2;
-  color: #fff;
+  /* background-color: #1b242f; */
+  /* border-bottom: 3px solid #4ac6d2; */
+  color: #333;
   position: fixed;
   z-index: 1;
   height: 45px;
@@ -19,16 +19,21 @@ nav {
 }
 
 .nav-icon {
-  margin: 0;
-  padding: 0 1rem;
+  padding: 1rem;
   font-weight: 300;
   font-size: 1rem;
   text-transform: uppercase;
   transition: 0.2s;
 }
 
+a.nav-icon {
+  text-decoration: none;
+  color: #333;
+}
+
 .nav-icon:hover {
-  color: #9e15bf;
+  color: #fff;
+  background-color: #4ac6d2;
   cursor: pointer;
 }
 
@@ -36,11 +41,7 @@ nav {
   align-self: center;
   width: 400px;
   height: 2px;
-  background-color: #fff;
-}
-
-.right-side {
-  animation-delay: 3s;
+  background-color: #333;
 }
 
 .title {
@@ -219,11 +220,14 @@ section {
   0% {
     background-color: #4ac6d2;
   }
-  50% {
+  33% {
     background-color: #9e15bf;
   }
-  100% {
+  66% {
     background-color: #333;
+  }
+  100% {
+    background-color: #fff;
   }
 }
 
@@ -251,16 +255,19 @@ section {
 }
 
 @keyframes growLeft {
-  from {
+  0% {
     transform: scaleX(0);
   }
-  to {
+  50% {
     transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
   }
 }
 
 .color-change {
-  animation: changeColor 5s infinite;
+  animation: changeColor 8s infinite;
   animation-direction: alternate;
 }
 
@@ -270,11 +277,17 @@ section {
 }
 
 .fade-in-right {
-  animation: fadeInRight ease 2s forwards;
+  animation: fadeInRight ease 1s forwards;
+}
+
+.fade-in-right-i {
+  animation: fadeInRight ease 1s forwards;
+  animation-delay: 2s;
+  opacity: 0;
 }
 
 .grow-left {
-  animation: growLeft ease 2s forwards;
+  animation: growLeft ease 4s forwards;
   transform: scaleX(0);
   transform-origin: left;
   animation-delay: 0.4s;
