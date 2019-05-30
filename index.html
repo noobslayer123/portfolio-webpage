@@ -15,73 +15,127 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <title>White Pigeon Page</title>
+
+    <title>PigeonDev - Hey, how's it goin'?</title>
   </head>
   <body>
-    <script src="./App.js"></script>
-    <!-- class="fade-in-right" -->
-    <nav>
-      <div class="flex-column">
-        <div class="flex-row">
-          <a href="#welcome" class="nav-icon fade-in-right"
-            ><i class="fas fa-home"></i> Home</a
-          >
-          <div class="nav-line grow-left"></div>
-          <a href="#about" class="nav-icon fade-in-right-i"
-            ><i class="fas fa-question"></i> About</a
-          >
-          <a href="#project" class="nav-icon fade-in-right-i"
-            ><i class="fas fa-laptop"></i> Project</a
-          >
-          <a href="#contact" class="nav-icon fade-in-right-i"
-            ><i class="fas fa-mobile-alt"></i> Contact</a
-          >
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li>
+                <a href="#welcome"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="#about"><i class="fas fa-question"></i> About</a>
+              </li>
+              <li>
+                <a href="#project"><i class="fas fa-laptop"></i> Project</a>
+              </li>
+              <li>
+                <a href="#contact"><i class="fas fa-mobile-alt"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#welcome" class="nav-btn fade-in-right"
+            ><i class="fas fa-home"></i> Home</a
+          >
+        </li>
+        <li><div class="nav-line grow-left"></div></li>
+        <li>
+          <a href="#about" class="nav-btn fade-in-right-i"
+            ><i class="fas fa-question"></i> About</a
+          >
+        </li>
+        <li>
+          <a href="#project" class="nav-btn fade-in-right-i"
+            ><i class="fas fa-laptop"></i> Project</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="nav-btn fade-in-right-i"
+            ><i class="fas fa-mobile-alt"></i> Contact</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <!-- Welcome Section -->
     <section id="welcome">
-      <div class="flex-column height-fix">
-        <div class="title fade-in-right">
+      <div class="title">
+        <h1 class="fade-in-right">
           Hello, I'm
           <span class="highlight text-color-change">Stanislav Holub</span>.
-          <br />
-          I'm a Junior Javascript/React Developer.
-        </div>
-        <a href="#contact" class="button fade-in-right"
-          >Contact me <i class="fas fa-arrow-right"></i
-        ></a>
+        </h1>
+        <h1 class="fade-in-right">I'm a Junior Javascript/React Developer.</h1>
       </div>
+
+      <a href="#contact" class="button fade-in-right"
+        >Contact me <i class="fas fa-arrow-right"></i
+      ></a>
     </section>
     <div class="section-line color-change"></div>
 
     <!-- About Section -->
     <section id="about">
-      <div class="flex-column">
-        <header>About</header>
-        <div class="header-bar"></div>
-        <div class="flex-row">
-          <div class="flex-item">
-            <h3>Discover</h3>
-            <p>
-              What do you need and when do you want it? We’ll define a solution
-              that’s right for you.
-            </p>
-          </div>
-          <div class="flex-item">
-            <h3>Design</h3>
-            <p>
-              Design is where we transition from great ideas, to a visual
-              reality.
-            </p>
-          </div>
-          <div class="flex-item">
-            <h3>Develop</h3>
-            <p>
-              We’ll bring your designs to life and polish to perfection.
-            </p>
-          </div>
+      <header>About</header>
+      <div class="header-bar"></div>
+      <div class="about-skills">
+        <ul>
+          <li>
+            <div class="icons">
+              <div class="square">
+                <i class="fab fa-js-square"></i>
+              </div>
+            </div>
+            <p>Javascript</p>
+          </li>
+          <li>
+            <div class="icons">
+              <div class="square"><i class="fab fa-react"></i></div>
+            </div>
+            <p>React</p>
+          </li>
+          <li>
+            <div class="icons">
+              <div class="square"><i class="fab fa-html5"></i></div>
+            </div>
+            <p>HTML</p>
+          </li>
+          <li>
+            <div class="icons">
+              <div class="square"><i class="fab fa-css3-alt"></i></div>
+            </div>
+            <p>CSS</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about-details fade-in-right">
+        <img
+          src="img/profilePic.jpg"
+          alt="Profile Photo"
+          width="200"
+          height="200"
+        />
+        <div class="description">
+          <h2>Who am I?</h2>
+          <p>
+            I am a junior web developer at the beginning of the adventure. When
+            I'm not learning new things, you'll find me cooking or playing
+            guitar.
+            <span class="highlight secondary-color"
+              >Feel free to ask any questions!</span
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -89,21 +143,28 @@
 
     <!-- Project Section -->
     <section id="project">
-      <div class="flex-column">
-        <header>Project</header>
-        <div class="header-bar"></div>
-        <div class="flex-column">
-          <img src="img/project.jpg" alt="Simple Cloud CRM Project" />
-          <div class="description">
-            <p>
-              The idea was to make simple, yet real life application, which will
-              represent my skills and abilities. <br /><br />It was built with
-              React and using Firebase integration to keep data available from
-              every gadget or computer with Internet connection.
-              <br /><br /><span class="highlight">Technologies: </span
-              >React/Redux/Firestore, Bootstrap
-            </p>
-          </div>
+      <header>Project</header>
+      <div class="header-bar"></div>
+      <div class="project-details">
+        <img src="img/project.gif" alt="Project" />
+        <div class="description">
+          <h3>Simple Cloud CRM</h3>
+          <ul class="tech-list">
+            <li class="tech-item">ES6</li>
+            <li class="tech-item">React</li>
+            <li class="tech-item">Redux</li>
+            <li class="tech-item">Firestore</li>
+            <li class="tech-item">Bootstrap</li>
+          </ul>
+          <p>
+            The idea was to make simple, yet functional application.
+          </p>
+          <p>
+            It was built with React and using Firebase integration to keep data
+            available on every device with Internet connection. Application
+            allows you to store information about your clients. You can also
+            gather notes related to a client and keep actual balance.
+          </p>
           <div class="buttons">
             <a
               href="https://simple-cloud-crm.netlify.com/"
@@ -127,46 +188,75 @@
 
     <!-- Contact Section -->
     <section id="contact">
-      <div class="flex-column">
-        <header>Contact</header>
-        <div class="header-bar" id="bar-contact"></div>
-
-        <a href="mailto:stas.snow@gmail.com" class="flex-item contact">
-          <span class="secondary-color">
-            <i class="fas fa-envelope"></i>
-          </span>
-          stas.snow@gmail.com
-        </a>
-        <div class="flex-item contact">
-          <span class="secondary-color"><i class="fas fa-mobile"></i></span>
-          +48 790 879 850
+      <header>Contact</header>
+      <div class="header-bar" id="bar-contact"></div>
+      <form class="contact-form" action="POST" data-netlify="true">
+        <h3 class="secondary-color">Have a question?</h3>
+        <div class="field">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            maxlength="50"
+            required
+            placeholder="Your name"
+            autocomplete="off"
+          />
         </div>
-      </div>
+        <div class="field">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Your email"
+            autocomplete="off"
+          />
+        </div>
+        <div class="field">
+          <textarea
+            name="message"
+            id="message"
+            rows="8"
+            required
+            placeholder="What would you like to ask?"
+          ></textarea>
+          <div class="field-captcha">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+        <ul class="actions">
+          <li>
+            <input type="submit" value="Send message" class="button" />
+          </li>
+        </ul>
+      </form>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="flex-column">
-        <div class="flex-row">
-          <a
-            href="https://www.facebook.com/stas.snow"
-            class="flex-item contact"
-          >
-            <span class="secondary-color">
-              <i class="fab fa-facebook-f"></i>
-            </span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/stanislav-holub/"
-            class="flex-item contact"
-          >
-            <span class="secondary-color"
-              ><i class="fab fa-linkedin-in"></i
-            ></span>
-          </a>
-        </div>
-        <p>Stanislav Holub &copy; 2019</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/stas.snow" class="contact-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/stanislav-holub/"
+          class="contact-icon"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/noobslayer123/" class="contact-icon">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
+      <p>Stanislav Holub &copy; 2019</p>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
