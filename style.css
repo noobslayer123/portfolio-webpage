@@ -321,11 +321,11 @@ textarea {
 
 .btn-submit {
   text-decoration: none;
-  background-color: #fff;
-  color: #333;
+  background-color: #333;
+  color: #fff;
   margin: 1rem;
   padding: 10px 20px;
-  border: 2px solid #333;
+  border: 2px solid #fff;
   font-size: 13pt;
   transition: 0.2s;
   cursor: pointer;

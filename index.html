@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
@@ -196,26 +197,32 @@
           <input
             type="text"
             name="name"
+            minlength="5"
             id="name"
             maxlength="50"
             placeholder="Your name"
             autocomplete="off"
+            required
           />
         </div>
         <div class="field">
-          <input
+          <input          
             type="email"
             name="email"
             id="email"
             placeholder="Your email"
             autocomplete="off"
+            required
           />
         </div>
         <div class="field">
           <textarea
+            minlength="10"
+            maxlength="500"
             name="message"
             id="message"
             rows="8"
+            required
             placeholder="What would you like to ask?"
           ></textarea>
         </div>
