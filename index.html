@@ -27,16 +27,16 @@
           <div>
             <ul>
               <li>
-                <a href="#welcome"><i class="fas fa-home"></i> Home</a>
+                <a href="#welcome" class="nav-link-sm"><i class="fas fa-home"></i> Home</a>
               </li>
               <li>
-                <a href="#about"><i class="fas fa-question"></i> About</a>
+                <a href="#about" class="nav-link-sm"><i class="fas fa-question"></i> About</a>
               </li>
               <li>
-                <a href="#project"><i class="fas fa-laptop"></i> Project</a>
+                <a href="#project" class="nav-link-sm"><i class="fas fa-laptop"></i> Project</a>
               </li>
               <li>
-                <a href="#contact"><i class="fas fa-mobile-alt"></i> Contact</a>
+                <a href="#contact" class="nav-link-sm"><i class="fas fa-mobile-alt"></i> Contact</a>
               </li>
             </ul>
           </div>
@@ -89,6 +89,25 @@
     <section id="about">
       <header>About</header>
       <div class="header-bar"></div>
+      <div class="about-details fade-in-right">
+        <img
+          src="img/profilePic.jpg"
+          alt="Profile Photo"
+          width="200"
+          height="200"
+        />
+        <div class="description">
+          <h2>Who am I?</h2>
+          <p>
+            I am a junior web developer at the beginning of the adventure. When
+            I'm not learning new things, you'll find me cooking or playing
+            guitar.
+            <span class="highlight secondary-color"
+              >Feel free to ask any questions!</span
+            >
+          </p>
+        </div>
+      </div>
       <div class="about-skills">
         <ul>
           <li>
@@ -118,26 +137,7 @@
             <p>CSS</p>
           </li>
         </ul>
-      </div>
-      <div class="about-details fade-in-right">
-        <img
-          src="img/profilePic.jpg"
-          alt="Profile Photo"
-          width="200"
-          height="200"
-        />
-        <div class="description">
-          <h2>Who am I?</h2>
-          <p>
-            I am a junior web developer at the beginning of the adventure. When
-            I'm not learning new things, you'll find me cooking or playing
-            guitar.
-            <span class="highlight secondary-color"
-              >Feel free to ask any questions!</span
-            >
-          </p>
-        </div>
-      </div>
+      </div>      
     </section>
     <div class="section-line color-change"></div>
 
@@ -218,16 +218,8 @@
             rows="8"
             placeholder="What would you like to ask?"
           ></textarea>
-<!--           <div class="field-captcha">
-            <div data-netlify-recaptcha="true"></div>
-          </div> -->
         </div>
-<!--         <ul class="actions">
-          <li> -->
-        <button type="submit" class="btn-submit">Submit</button>
-<!--             <input type="submit" value="Send message" class="button" /> -->
-<!--           </li>
-        </ul> -->
+        <input type="submit" class="btn-submit" value="Submit"></input>
       </form>
     </section>
 
