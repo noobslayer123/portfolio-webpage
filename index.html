@@ -190,7 +190,7 @@
     <section id="contact">
       <header>Contact</header>
       <div class="header-bar" id="bar-contact"></div>
-      <form name="contact" class="contact-form" action="POST" data-netlify-recaptcha="true" data-netlify="true">
+      <form name="contact" class="contact-form" action="POST" data-netlify="true">
         <h3 class="secondary-color">Have a question?</h3>
         <div class="field">
           <input
@@ -198,7 +198,6 @@
             name="name"
             id="name"
             maxlength="50"
-            required
             placeholder="Your name"
             autocomplete="off"
           />
@@ -208,7 +207,6 @@
             type="email"
             name="email"
             id="email"
-            required
             placeholder="Your email"
             autocomplete="off"
           />
@@ -218,18 +216,18 @@
             name="message"
             id="message"
             rows="8"
-            required
             placeholder="What would you like to ask?"
           ></textarea>
-          <div class="field-captcha">
+<!--           <div class="field-captcha">
             <div data-netlify-recaptcha="true"></div>
-          </div>
+          </div> -->
         </div>
-        <ul class="actions">
-          <li>
-            <input type="submit" value="Send message" class="button" />
-          </li>
-        </ul>
+<!--         <ul class="actions">
+          <li> -->
+        <button type="submit" value="Submit" class="button">Submit</button>
+<!--             <input type="submit" value="Send message" class="button" /> -->
+<!--           </li>
+        </ul> -->
       </form>
     </section>
 
