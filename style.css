@@ -150,7 +150,7 @@ footer p {
 
 .about-grid {
   display: inline-grid;
-  grid-template-columns: repeat(2, 25rem);
+  grid-template-columns: repeat(2, 28rem);
 }
 
 .about-skills ul li .icons {
