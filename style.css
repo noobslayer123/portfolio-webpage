@@ -22,6 +22,7 @@ body {
 
 .navbar {
   position: fixed;
+  background: rgba(255, 255, 255, 0.2);
   top: 0;
   z-index: 1;
   display: flex;
@@ -122,42 +123,45 @@ footer p {
 
 .about-skills ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 2rem;
 }
 
 .about-skills ul .flex-frag {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .about-skills ul li {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 2rem;
   color: #333;
-  margin: 2rem;
+  border: 2px #8f9aa7 solid;
+  padding: 1rem;
+  margin: 0.5rem;
 }
 
 .about-skills ul li p {
   padding: 1rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-.rotated {
-  transform: rotate(-90deg);
+.about-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 25rem);
 }
 
 .about-skills ul li .icons {
-  align-items: center;
-  font-size: 8rem;
+  font-size: 4rem;
   color: #fff;
 }
 
 .about-skills ul li .icons .square {
   background-color: #4ac6d2;
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  width: 75px;
   z-index: -99;
 }
 
@@ -647,6 +651,10 @@ footer {
   .about-details {
     display: block;
     width: 100%;
+  }
+
+  .about-grid {
+    display: contents;
   }
 
   .about-details .description {
