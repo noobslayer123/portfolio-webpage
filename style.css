@@ -227,6 +227,11 @@ footer p {
   margin: 1rem;
 }
 
+.project-details .description .tech-list .flex-frag {
+  display: flex;
+  flex-direction: row;
+}
+
 .project-details .description .tech-list .tech-item {
   border-radius: 8px;
   background-color: #262f38;
