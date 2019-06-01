@@ -662,7 +662,9 @@ footer {
   }
 
   .project-details img {
-    display: none;
+    /* display: none; */
+    width: 200px;
+    height: auto;
   }
 
   .project-details .description .tech-list {
